@@ -1,4 +1,23 @@
 
-.env
+
 ..gitignore.swp
+
+# Python virtual environment
+.venv/
+
+# Sensitive Google API credentials and tokens
+credentials.json
+token.json
+
+# Environment variables file
+.env
+
+# Generated output files
+*.txt
+*.html
+
+# Python cache files
+__pycache__/
+*.pyc
+
 

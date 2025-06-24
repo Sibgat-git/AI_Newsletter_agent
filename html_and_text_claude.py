@@ -16,7 +16,7 @@ load_dotenv()
 
 
 model = ChatAnthropic(
-    model="claude-3-5-haiku-latest",
+    model="claude-3-opus-20240229",
     temperature=1,
     api_key=os.getenv("CLAUDE_API_KEY")
     
@@ -241,3 +241,10 @@ with open("compound_newsletter_claude.txt", "w", encoding="utf-8") as f:
 print("\n✅ Newsletter generation complete!")
 print("📄 HTML version saved to: compound_newsletter.html")
 print("📝 Text version saved to: compound_newsletter.txt")
+
+
+
+"""Things that  need to be changed here:
+        1. Better parsing
+        2. Need to find a way for the llm to need read the same prompt twice and use only iteration of the prompt to create both text and html.
+            this removes the variance that I witnessed due two chains."""

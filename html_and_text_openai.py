@@ -18,7 +18,7 @@ load_dotenv()
 
 model = ChatOpenAI(
     model="gpt-4o",
-    temperature=1,
+    temperature=0.7,
     api_key=os.getenv("OPENAI_API_KEY")
     
 )
@@ -26,8 +26,7 @@ model = ChatOpenAI(
 
 
 
-newsletter_file_path = "/home/sibgat/Desktop/Newsletter/langchain-crash-course/newsletters.txt"
-
+newsletter_file_path = "/home/sibgat/Desktop/Newsletter_self-environment/TheRundown.txt"
 loader = TextLoader(newsletter_file_path)
 documents = loader.load()
 
