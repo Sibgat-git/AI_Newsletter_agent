@@ -26,7 +26,7 @@ model = ChatOpenAI(
 
 
 
-newsletter_file_path = "/home/sibgat/Desktop/Newsletter_self-environment/TheRundown.txt"
+newsletter_file_path = "/home/sibgat/Desktop/Newsletter_self-environment/email_content_TAAFT.txt"
 loader = TextLoader(newsletter_file_path)
 documents = loader.load()
 
@@ -239,5 +239,5 @@ with open("compound_newsletter_openai.txt", "w", encoding="utf-8") as f:
     f.write(text_output)
 
 print("\n✅ Newsletter generation complete!")
-print("📄 HTML version saved to: compound_newsletter.html")
+print("📄 HTML version saved to: compound_newsletter_taaft.html")
 print("📝 Text version saved to: compound_newsletter.txt")

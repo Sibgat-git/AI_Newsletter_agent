@@ -11,8 +11,8 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 def main():
     """
-    Connects to the Gmail API, fetches emails from a specific sender and date range,
-    and saves their content to a text file.
+    Connects to the Gmail API, fetches emails from a list of specific senders 
+    and a date range, and saves their content to a single text file.
     """
     creds = None
     # The file token.json stores the user's access and refresh tokens.
@@ -35,22 +35,37 @@ def main():
         # Build the Gmail API service
         service = build('gmail', 'v1', credentials=creds)
 
-        # Define the search query.
-        # Emails from a specific address, after Jan 1, 2024, and before Jan 31, 2024.
-        # You can change 'user@example.com', and the dates.
-        query = 'from:newsletter@aisecret.us after:2025/06/21 before:2025/06/29'
+        ### MODIFIED SECTION ###
+        # 1. Define the list of sender emails you want to search for.
+        sender_emails = [
+            'hi@mail.theresanaiforthat.com',
+            'newsletter@aisecret.us',
+            'news@daily.therundown.ai'
+        ]
+
+        # 2. Construct the search query to find emails from ANY of the senders in the list.
+        # The format 'from:{sender1 sender2}' tells Gmail to use an OR condition.
+        from_query = "from:{" + " ".join(sender_emails) + "}"
+        date_query = 'after:2025/06/21 before:2025/06/29'
+        
+        query = f"{from_query} {date_query}"
+        
+        print(f"Executing search query: {query}")
+        ### END MODIFIED SECTION ###
         
         # Call the Gmail API to list the messages
         result = service.users().messages().list(userId='me', q=query).execute()
         messages = result.get('messages', [])
 
         if not messages:
-            print("No messages found.")
+            print("No messages found from the specified senders in the given date range.")
             return
 
-        print(f"Found {len(messages)} messages. Saving content to email_content.txt...")
+        # Use a more descriptive output filename
+        output_filename = 'filtered_emails.txt'
+        print(f"Found {len(messages)} messages. Saving content to {output_filename}...")
 
-        with open('email_content_Ai_secret.txt', 'w', encoding='utf-8') as output_file:
+        with open(output_filename, 'w', encoding='utf-8') as output_file:
             for msg_info in messages:
                 msg = service.users().messages().get(userId='me', id=msg_info['id']).execute()
                 
@@ -82,11 +97,10 @@ def main():
                         output_file.write(text)
                         output_file.write("\n\n")
 
-        print("Successfully saved email content to email_content_Ai secret.txt")
+        print(f"Successfully saved email content to {output_filename}")
 
     except HttpError as error:
         print(f'An error occurred: {error}')
 
 if __name__ == '__main__':
     main()
-

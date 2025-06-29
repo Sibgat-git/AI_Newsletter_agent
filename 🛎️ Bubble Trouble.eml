@@ -1,0 +1,1906 @@
+Delivered-To: sibgatullahkhanzehady@gmail.com
+Received: by 2002:a05:6504:98a:b0:2b1:732f:8164 with SMTP id e10csp1716254lts;
+        Fri, 27 Jun 2025 03:15:27 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFH1jgvt/X4g2mX2PJVhixDRPWqOJOPJLr9x3FiO0HV1R8T3uTiG7L1GIGvVhXLM9Lw98h5
+X-Received: by 2002:a05:6808:1385:b0:401:e963:e973 with SMTP id 5614622812f47-40b33e37226mr1913873b6e.30.1751019327527;
+        Fri, 27 Jun 2025 03:15:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1751019327; cv=none;
+        d=google.com; s=arc-20240605;
+        b=JMrwWrBXgnOOh3ONdmLewvHy/8YrQ/5+PNhKS4ulrtuprr9HhhmVCnKCHQmTc0mmzN
+         uposX9P6kgpGZwbBzt0WOTZY8S9Ov42E9zFewXs8h6sNKJXHYvBaN9+JbBFAf94PLO0B
+         Rxo3T+nZSK+gS6havQbZyZaNB5iuXEpe+F4kJMCgm7WfNfDX4O7wn3AF+EUwtVjsk6Go
+         niAZ5aVa9YlWZNwj5CqfC8QCXKry6LUuSNCRB9goR22RzFSeWcaHU6zlkueVfXb6oapV
+         0rTa+DlUogih6oUpM7G57d6xR5Fqlhy/jxbqRVe6vgHtsiTacM9spt9s9+uR52WwXCCH
+         vEHQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=precedence:list-unsubscribe-post:list-unsubscribe:feedback-id
+         :sesame_open:mime-version:subject:message-id:to:reply-to:from:date
+         :sender:dkim-signature;
+        bh=W67xS9kpECqd+MRtf7Nfa61H6K34hTB49Gbbg0Mt+2U=;
+        fh=c8EhCujFdysIDN/lYaD23gK+3Vj/fyBB4wjxWVmd1J8=;
+        b=WsC0fE8G2HPn7JQTcumvUaiydFVUGn0+bBIcUPaGOa9gMClJJH3uGQdYYf2FT+1dOS
+         W+jYaofQdEaT7vsNLR+c2CndCgeBBPGX5MKAsd3+/sCEDMXtIh1DSyuNMgDNqZdzwvRF
+         ZxErM688dqYA6TC6n5HDS6hJ/SSHAo9GPV09OVDJpUkELot1BFeWxoq06bRE23E06QAE
+         aQSWh4G8QDnwowKP0S+b+4Bm7BflVD9LLIAQvuOBoqtAmhf/32A2e9yN4dNTuMzEV3nB
+         L8yFVE4CFgMvEje7G2QtfrbLK2lHcGNxgOzFhcJ0R3NizTs65pdbaO/rfbov+7Epwtfy
+         nEEg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aisecret.us header.s=mail header.b=YTjekvuN;
+       spf=pass (google.com: domain of newsletter@aisecret.us designates 101.44.172.242 as permitted sender) smtp.mailfrom=newsletter@aisecret.us;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=aisecret.us
+Return-Path: <newsletter@aisecret.us>
+Received: from ptr1.aisecret.us (ptr1.aisecret.us. [101.44.172.242])
+        by mx.google.com with ESMTPS id 5614622812f47-40b324638a5si1015486b6e.295.2025.06.27.03.15.24
+        for <sibgatullahkhanzehady@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 27 Jun 2025 03:15:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of newsletter@aisecret.us designates 101.44.172.242 as permitted sender) client-ip=101.44.172.242;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aisecret.us header.s=mail header.b=YTjekvuN;
+       spf=pass (google.com: domain of newsletter@aisecret.us designates 101.44.172.242 as permitted sender) smtp.mailfrom=newsletter@aisecret.us;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=aisecret.us
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aisecret.us;
+ i=@aisecret.us; q=dns/txt; s=mail; t=1751019299; h=sender : date :
+ from : reply-to : to : message-id : subject : mime-version :
+ content-type : list-unsubscribe : from : list-unsubscribe-post;
+ bh=0bZEXfvIFtaFruiZVnJ3V+rtLdETZs9avXbHi6QJ3XM=;
+ b=YTjekvuNDpbGhGEF/ldU7gSofEMCnYyurRIbXYaNTWf2b8CVIbzHxh9IqQ98rJofYEJRi
+ 2LDysSAns0qLJWCr5uykESgIx+Cegsn9VFPX5eGSYEhfSybB7hdO4+BbOg6Qp1eFaabtlZw
+ dUiirq2i4OAjBgkaFPcQ5/pQ40C2ykg=
+Sender: newsletter@aisecret.us
+Received: from web.api (Unknown [127.0.0.1])         by Inbound Server with ESMTPA id C1FA0B3F-C226-4F47-83CA-9676A2886E34.1         envelope-from <newsletter@aisecret.us> (authenticated bits=0); Fri, 27 Jun 2025 18:05:03 +0800
+Date: Fri, 27 Jun 2025 18:05:01 +0800 (CST)
+From: AI Secret <newsletter@aisecret.us>
+Reply-To: leo <leo@aisecret.us>
+To: sibgatullahkhanzehady@gmail.com
+Message-ID: <1751018703480_108860_8002_6569.sc-10_43_4_215-inbound49@aisecret.us>
+Subject: =?utf-8?b?8J+bju+4jyBCdWJibGUgVHJvdWJsZQ==?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_7538683_571724271.1751018701803"
+sesame_open: 3de0be30478255bab0a4c78a5a664774
+X-ENGAGELAB-UUID: 1751018703480_108860_8002_6569.sc-10_43_4_215-inbound49$sibgatullahkhanzehady@gmail.com
+X-ENGAGELAB-LOG: 1751018703480_108860_8002_6569.sc-10_43_4_215-inbound49$sibgatullahkhanzehady@gmail.com#sibgatullahkhanzehady@gmail.com#810160#108860#0#
+X-ENGAGELAB-NEW: MTc1MTAxODcwMzQ4MF8xMDg4NjBfODAwMl82NTY5LnNjLTEwXzQzXzRfMjE1LWluYm91bmQ0OSRzaWJnYXR1bGxhaGtoYW56ZWhhZHlAZ21haWwuY29tI3NpYmdhdHVsbGFoa2hhbnplaGFkeUBnbWFpbC5jb20jODEwMTYwIzEwODg2MCMwIw==
+Feedback-ID: 810160:108860:1:sc_cn
+List-Unsubscribe: <mailto:0_810160_1751018703480_108860_8002_6569.sc-10_43_4_215-inbound49@aisecret.us>, <http://track.aisecret.us/track/unsubscribe.do?p=eyJ0cmFja19kb21haW4iOiAidHJhY2suYWlzZWNyZXQudXMiLCAidXNlcl9pZCI6IDEwODg2MCwgInRhc2tfaWQiOiAiIiwgImVtYWlsX2lkIjogIjE3NTEwMTg3MDM0ODBfMTA4ODYwXzgwMDJfNjU2OS5zYy0xMF80M180XzIxNS1pbmJvdW5kNDkkc2liZ2F0dWxsYWhraGFuemVoYWR5QGdtYWlsLmNvbSIsICJwYWdlX2lkIjogLTEsICJzaWduIjogIjg4OTlmNGJmMTRiNzA3NjEwNDNhMWQ5Y2I1MzI2NmNiIiwgInVzZXJfaGVhZGVycyI6IHt9LCAibGFiZWwiOiAwLCAiY3VzdG9tX2FyZ3MiOiB7fSwgInJlYWxfdHlwZSI6ICIiLCAibmV0ZWFzZSI6ICJmYWxzZSIsICJvdXRfaXAiOiAiMTAxLjQ0LjE3Mi4yNDIiLCAiY29udGVudF90eXBlIjogIiIsICJyZWNlaXZlciI6ICJzaWJnYXR1bGxhaGtoYW56ZWhhZHlAZ21haWwuY29tIiwgIm1haWxsaXN0X2lkIjogMCwgIm92ZXJzZWFzIjogIiIsICJjYXRlZ29yeV9pZCI6IDgxMDE2MCwgIm91dF9wb29sX2lkIjogIiJ9>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Precedence: bulk
+
+
+------=_Part_7538683_571724271.1751018701803
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+ <head>
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">=
+ <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsP=
+erInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+  <title>=F0=9F=9B=8E=EF=B8=8F Bubble Trouble</title>
+  <style>
+.post-title-link {
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+}
+.post-title-link-left {
+  text-align: left;
+}
+.view-online-link {
+  word-wrap: none;
+  white-space: nowrap;
+  color: #738a94;
+  text-decoration: underline !important;
+}
+.kg-nft-link {
+  display: block;
+  text-decoration: none !important;
+  color: #000000 !important;
+  font-family: inherit !important;
+  font-size: 14px;
+  line-height: 1.3em;
+  padding-top: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 4px;
+}
+.kg-twitter-link {
+  display: block;
+  text-decoration: none !important;
+  color: #000000 !important;
+  font-family: inherit !important;
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.3em;
+}
+.kg-audio-link {
+  color: #738a94 !important;
+}
+@media only screen and (max-width: 620px) {
+  table.body {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .mobile-only {
+    display: initial !important;
+  }
+
+  .hide-desktop {
+    display: initial !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  table.body p,
+table.body ul,
+table.body ol,
+table.body td {
+    font-size: 16px;
+  }
+
+  table.body .post-excerpt {
+    font-size: 16px !important;
+  }
+
+  table.body .kg-callout-card {
+    padding: 16px 24px !important;
+  }
+
+  table.body .kg-callout-text {
+    font-size: 16px !important;
+    line-height: 1.5em !important;
+  }
+
+  table.body pre {
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+  }
+
+  table.body .content {
+    padding: 0 !important;
+  }
+
+  table.body .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  table.body .main {
+    border-spacing: 10px 0 !important;
+    border-left-width: 0 !important;
+    border-radius: 0 !important;
+    border-right-width: 0 !important;
+  }
+
+  table.body .btn table {
+    width: 100% !important;
+  }
+
+  table.body .btn a {
+    width: 100% !important;
+  }
+
+  table.body .img-responsive {
+    height: auto !important;
+    max-width: 100% !important;
+    width: auto !important;
+  }
+
+  table.body .site-icon {
+    padding-top: 0 !important;
+  }
+
+  table.body .site-info {
+    padding-top: 24px !important;
+  }
+
+  table.body .post-title-link {
+    margin-top: 24px !important;
+  }
+
+  table.body .post-meta-wrapper {
+   =20
+  }
+
+  table.body .site-icon img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  table.body .site-url a {
+    font-size: 13px !important;
+    padding-bottom: 16px !important;
+  }
+
+  table.body .post-meta,
+table.body .post-meta-date {
+    white-space: normal !important;
+    font-size: 13px !important;
+    line-height: 1.2em;
+  }
+
+  table.body .post-meta,
+table.body .view-online {
+    width: 100% !important;
+  }
+
+  table.body .post-meta-left,
+table.body .post-meta-left.view-online {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  table.body .post-meta.view-online-mobile {
+    display: table-row !important;
+  }
+
+  table.body .post-meta-left.view-online-mobile,
+table.body .post-meta-left.view-online-mobile .view-online {
+    text-align: left !important;
+  }
+
+  table.body .post-meta.view-online.desktop {
+    display: none !important;
+  }
+
+  table.body .view-online {
+    text-decoration: none;
+  }
+
+  table.body .footer p,
+table.body .footer p span {
+    font-size: 13px !important;
+  }
+
+  table.body .view-online-link,
+table.body .footer,
+table.body .footer a {
+    font-size: 13px !important;
+  }
+
+  table.body .post-title a {
+    font-size: 26px !important;
+    line-height: 1.1em !important;
+  }
+
+  table.feedback-buttons {
+    display: none !important;
+  }
+
+  table.feedback-buttons-mobile {
+    display: table !important;
+    width: 100% !important;
+    max-width: 390px;
+  }
+
+  table.body .feedback-button-mobile-text {
+    font-size: 13px !important;
+  }
+
+  table.body .latest-posts-header {
+    font-size: 12px !important;
+  }
+
+  table.body .latest-post-title {
+    padding-right: 8px !important;
+  }
+
+  table.body .latest-post h4,
+table.body .latest-post h4 span {
+    padding: 4px 0 6px !important;
+    font-size: 15px !important;
+  }
+
+  table.body .latest-post-excerpt,
+table.body .latest-post-excerpt a,
+table.body .latest-post-excerpt span {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+  }
+
+  table.body .subscription-box h3 {
+    font-size: 14px !important;
+  }
+
+  table.body .subscription-box p,
+table.body .subscription-box p span {
+    font-size: 13px !important;
+  }
+
+  table.body .subscription-details,
+table.body .manage-subscription {
+    display: inline-block;
+    width: 100%;
+    text-align: left !important;
+    font-size: 13px !important;
+  }
+
+  table.body .subscription-details {
+    padding-bottom: 12px;
+  }
+
+  table.body .kg-bookmark-card {
+    width: 90vw;
+  }
+
+  table.body .kg-bookmark-thumbnail {
+    display: none !important;
+  }
+
+  table.body .kg-bookmark-metadata span {
+    font-size: 13px !important;
+  }
+
+  table.body .kg-embed-card {
+    max-width: 90vw !important;
+  }
+
+  table.body h1 {
+    font-size: 32px !important;
+    line-height: 1.3em !important;
+  }
+
+  table.body h2,
+table.body h2 span {
+    font-size: 26px !important;
+    line-height: 1.22em !important;
+  }
+
+  table.body h3 {
+    font-size: 21px !important;
+    line-height: 1.25em !important;
+  }
+
+  table.body h4 {
+    font-size: 19px !important;
+    line-height: 1.3em !important;
+  }
+
+  table.body h5 {
+    font-size: 16px !important;
+    line-height: 1.4em !important;
+  }
+
+  table.body h6 {
+    font-size: 16px !important;
+    line-height: 1.4em !important;
+  }
+
+  table.body blockquote {
+    font-size: 16px !important;
+    line-height: 1.6em;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+
+  table.body blockquote.kg-blockquote-alt {
+    border-left: 0 none !important;
+    margin: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 1.5em !important;
+    font-size: 18px !important;
+    line-height: 1.4em !important;
+  }
+
+  table.body hr {
+    margin: 2em 0 !important;
+  }
+
+  table.body .kg-header-card.kg-v2 span {
+    font-size: inherit !important;
+  }
+
+  table.body .kg-header-card.kg-v2 .kg-header-card-content {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  table.body .kg-header-card.kg-v2 .kg-header-card-image + .kg-header-card-=
+content {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+
+  table.body .kg-header-card.kg-v2 .kg-header-card-heading {
+    font-size: 2.2em !important;
+    line-height: 1.1 !important;
+  }
+
+  table.body .kg-header-card.kg-v2 .kg-header-card-subheading {
+    line-height: 1.3em !important;
+  }
+
+  .feature-image-caption {
+    font-size: 13px!important;
+  }
+
+  .kg-card-figcaption {
+    font-size: 13px!important;
+  }
+
+  .kg-card-figcaption p,
+.kg-card-figcaption p span {
+    font-size: 13px!important;
+  }
+}
+@media all {
+  .subscription-details p.hidden {
+    display: none !important;
+  }
+
+  .ExternalClass {
+    width: 100%;
+  }
+
+  .ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+    line-height: 100%;
+  }
+
+  .apple-link a {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-decoration: none !important;
+  }
+
+  #MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  .btn-primary table td:hover {
+    background-color: #34495e !important;
+  }
+
+  .btn-primary a:hover {
+    background-color: #34495e !important;
+    border-color: #34495e !important;
+  }
+}
+</style>
+ </head>
+ <body style=3D"background-color: #fff; font-family: -apple-system, BlinkMa=
+cSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color=
+ Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; -webkit-font-smoothing: antia=
+liased; font-size: 18px; line-height: 1.4; margin: 0; padding: 0; -ms-text-=
+size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #000000;"><span c=
+lass=3D"preheader" style=3D"color: transparent; display: none; height: 0; m=
+ax-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; vi=
+sibility: hidden; width: 0;">SoftBank=E2=80=99s Late Bet, Altman Torches NY=
+T, Google Triple Releases</span>
+  <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"body" width=3D"100%" style=3D"border-collapse: separate; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; width: =
+100%;" bgcolor=3D"#fff"><!-- Outlook doesn't respect max-width so we need a=
+n extra centered table --> <!--[if mso]>
+            <tr>
+                <td>
+                    <center>
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"600">
+            <![endif]-->
+   <tbody>
+    <tr>
+     <td style=3D"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI=
+', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emo=
+ji', 'Segoe UI Symbol'; font-size: 18px; vertical-align: top; color: #00000=
+0;" valign=3D"top">&nbsp;</td>
+     <td class=3D"container" style=3D"font-family: -apple-system, BlinkMacS=
+ystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color E=
+moji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; vertical-align=
+: top; color: #000000; display: block; max-width: 600px; margin: 0 auto;" v=
+align=3D"top">
+      <div class=3D"content" style=3D"box-sizing: border-box; display: bloc=
+k; margin: 0 auto; max-width: 600px;"><!-- START CENTERED WHITE CONTAINER -=
+->
+       <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"main" width=3D"100%" style=3D"border-collapse: separate;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: #ffffff; border-=
+radius: 3px; border-spacing: 20px 0; width: 100%;"><!-- START MAIN CONTENT =
+AREA -->
+        <tbody>
+         <tr>
+          <td class=3D"wrapper" style=3D"font-family: -apple-system, BlinkM=
+acSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Colo=
+r Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; vertical-al=
+ign: top; color: #000000; box-sizing: border-box;" valign=3D"top">
+           <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"border-collapse: separate; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+            <tbody>
+             <tr>
+              <td class=3D"post-title post-title-with-excerpt" style=3D"fon=
+t-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,=
+ Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol=
+'; vertical-align: top; color: #000000; font-size: 36px; line-height: 1.1em=
+; font-weight: 700; text-align: center; padding-bottom: 8px;" valign=3D"top=
+" align=3D"center"><a href=3D"https://aisecret.us/r/d0a20106?m=3D0bb90972-7=
+579-4264-9403-9a899de6fe80" class=3D"post-title-link" style=3D"text-decorat=
+ion: none; color: #000000; display: block; text-align: center; margin-top: =
+32px; overflow-wrap: anywhere;" target=3D"_blank">=F0=9F=9B=8E=EF=B8=8F Bub=
+ble Trouble</a></td>
+             </tr>
+             <tr>
+              <td style=3D"font-family: -apple-system, BlinkMacSystemFont, =
+'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Seg=
+oe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; vertical-align: top; colo=
+r: #000000; width: 100%;" width=3D"100%" valign=3D"top">
+               <table class=3D"post-meta-wrapper" role=3D"presentation" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"borde=
+r-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: =
+100%; ">
+                <tbody>
+                 <tr>
+                  <td height=3D"20" class=3D"post-meta post-meta-center" st=
+yle=3D"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, =
+Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe=
+ UI Symbol'; vertical-align: top; color: #738a94; font-size: 13px; font-wei=
+ght: 400; text-align: center; padding: 0;" valign=3D"top" align=3D"center">=
+By Magna =E2=80=A2 <span class=3D"post-meta-date" style=3D"white-space: now=
+rap;">27 Jun 2025 </span></td>
+                  <td class=3D"post-meta post-meta-center view-online deskt=
+op" style=3D"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro=
+boto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', =
+'Segoe UI Symbol'; vertical-align: top; color: #738a94; font-size: 13px; fo=
+nt-weight: 400; text-align: center; display: none;" valign=3D"top" align=3D=
+"center">
+                   <div style=3D"padding-left:15px;padding-right:15px;">
+                    <p style=3D"color:#000000;color:var(--wt-text-on-backgr=
+ound-color) !important;font-family:'Helvetica',Arial,sans-serif;text-align:=
+center;"><sup><b><a class=3D"link" href=3D"https://aisecret.us/r/92b334c3?m=
+=3D0bb90972-7579-4264-9403-9a899de6fe80" target=3D"_blank" style=3D"color:#=
+255bee;font-weight:bold;word-break:break-word;font-size: 15px;">Read Online=
+</a></b></sup><span style=3D"font-size: 15px;color:rgb(34, 34, 34);font-fam=
+ily:Helvetica, Arial, sans-serif;"><sup> | </sup></span><sup><b><a class=3D=
+"link" href=3D"https://aisecret.us/#/portal/signup?utm_source=3Dnewsletter-=
+signup" target=3D"_blank" style=3D"font-size: 15px;color:#255bee;font-weigh=
+t:bold;word-break:break-word;;">Sign Up</a></b></sup><span style=3D"font-si=
+ze: 15px;color:rgb(34, 34, 34);font-family:Helvetica, Arial, sans-serif;"><=
+sup> | </sup></span><sup><b><a class=3D"link" href=3D"mailto:mark@aisecret.=
+us?subject=3DInquiry+about+the+sponsorship+with+AI+Secret&amp;body=3DHi+Mar=
+k,%0d%0a%0d%0aWe're+interested+in+the+collabs+with+AI+Secret.+Please+share+=
+with+us+more+information+such+as+the+cost+and+any+available+time+slots." st=
+yle=3D"font-size: 15px;color:#255bee;font-weight:bold;word-break:break-word=
+;;">Advertise</a></b></sup></p>
+                   </div></td>
+                 </tr>
+                 <tr class=3D"post-meta post-meta-center view-online-mobile=
+" style=3D"color: #738a94; font-size: 13px; font-weight: 400; text-align: c=
+enter;" align=3D"center">
+                  <td height=3D"20" class=3D"view-online" style=3D"font-fam=
+ily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Aria=
+l, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; ve=
+rtical-align: top; color: #738a94; font-size: 13px; font-weight: 400; text-=
+align: center; text-decoration: none;" valign=3D"top" align=3D"center">
+                   <div style=3D"padding-left:15px;padding-right:15px;">
+                    <p style=3D"color:#000000;color:var(--wt-text-on-backgr=
+ound-color) !important;font-family:'Helvetica',Arial,sans-serif;text-align:=
+center;"><sup><b><a class=3D"link" href=3D"https://aisecret.us/r/12cb9ed7?m=
+=3D0bb90972-7579-4264-9403-9a899de6fe80" target=3D"_blank" style=3D"color:#=
+255bee;font-weight:bold;word-break:break-word;font-size: 15px;">Read Online=
+</a></b></sup><span style=3D"font-size: 15px;color:rgb(34, 34, 34);font-fam=
+ily:Helvetica, Arial, sans-serif;"><sup> | </sup></span><sup><b><a class=3D=
+"link" href=3D"https://aisecret.us/#/portal/signup?utm_source=3Dnewsletter-=
+signup" target=3D"_blank" style=3D"font-size: 15px;color:#255bee;font-weigh=
+t:bold;word-break:break-word;;">Sign Up</a></b></sup><span style=3D"font-si=
+ze: 15px;color:rgb(34, 34, 34);font-family:Helvetica, Arial, sans-serif;"><=
+sup> | </sup></span><sup><b><a class=3D"link" href=3D"mailto:mark@aisecret.=
+us?subject=3DInquiry+about+the+sponsorship+with+AI+Secret&amp;body=3DHi+Mar=
+k,%0d%0a%0d%0aWe're+interested+in+the+collabs+with+AI+Secret.+Please+share+=
+with+us+more+information+such+as+the+cost+and+any+available+time+slots." st=
+yle=3D"font-size: 15px;color:#255bee;font-weight:bold;word-break:break-word=
+;;">Advertise</a></b></sup></p>
+                   </div></td>
+                 </tr>
+                </tbody>
+               </table></td>
+             </tr>
+             <tr class=3D"post-content-row">
+              <td class=3D"post-content-sans-serif" style=3D"font-family: -=
+apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, san=
+s-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical=
+-align: top; font-size: 17px; line-height: 1.5em; color: #000000; padding-b=
+ottom: 20px; border-bottom: 1px solid #e5eff5; max-width: 600px;" valign=3D=
+"top"><!-- POST CONTENT START -->
+               <div class=3D"kg-card kg-image-card" style=3D"margin: 0 0 1.=
+5em; padding: 0;">
+                <a href=3D"https://aisecret.us/r/9ab6796e?m=3D0bb90972-7579=
+-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255bee=
+;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-brea=
+k:break-word;" target=3D"_blank"><img src=3D"https://d18e5vrcqydw4b.cloudfr=
+ont.net/2025/03/Ghost-2.png" class=3D"kg-image" alt loading=3D"lazy" width=
+=3D"600" height=3D"126" style=3D"border: none; -ms-interpolation-mode: bicu=
+bic; max-width: 100%; display: block; margin: 0 auto; height: auto; width: =
+auto;"></a>
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+Good Morning, AI Enthusiasts!</p><p style=3D"margin: 0 0 1.5em 0; line-heig=
+ht: 1.6em;">Cash backfills regret, new gadgets bloom, privacy PR bombs fly,=
+ and two million students cram happily ever after=E2=80=94does your playboo=
+k bet on capital, code, or credibility?</p>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;">
+               <div class=3D"kg-card kg-image-card" style=3D"margin: 0 0 1.=
+5em; padding: 0;">
+                <a href=3D"https://aisecret.us/r/266ae6d8?m=3D0bb90972-7579=
+-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255bee=
+;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-brea=
+k:break-word;" target=3D"_blank"><img src=3D"https://d18e5vrcqydw4b.cloudfr=
+ont.net/2025/06/AiSDR-logo-1.png" class=3D"kg-image" alt loading=3D"lazy" w=
+idth=3D"600" height=3D"61" style=3D"border: none; -ms-interpolation-mode: b=
+icubic; max-width: 100%; display: block; margin: 0 auto; height: auto; widt=
+h: auto;"></a>
+               </div>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;"><mark>VENTURE</mark></strong></p><h3 id=3D"softban=
+k-ceo-admits-he-fumbled-the-openai-bag" style=3D"margin-top: 0; font-family=
+: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, =
+sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-=
+height: 1.11em; font-weight: 700; text-rendering: optimizeLegibility; margi=
+n: 1.5em 0 0.5em 0; font-size: 26px;">SoftBank CEO Admits He Fumbled the Op=
+enAI Bag</h3>
+               <div class=3D"kg-card kg-image-card kg-card-hascaption" styl=
+e=3D"margin: 0 0 1.5em; padding: 0;">
+                <a href=3D"https://aisecret.us/r/41c8a0cd?m=3D0bb90972-7579=
+-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255bee=
+;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-brea=
+k:break-word;" target=3D"_blank"><img src=3D"https://d18e5vrcqydw4b.cloudfr=
+ont.net/2025/06/1751007386222.jpg" class=3D"kg-image" alt loading=3D"lazy" =
+width=3D"600" height=3D"337" style=3D"border: none; -ms-interpolation-mode:=
+ bicubic; max-width: 100%; display: block; margin: 0 auto; height: auto; wi=
+dth: auto;"></a>
+                <div class=3D"kg-card-figcaption" style=3D"text-align: cent=
+er; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Hel=
+vetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI=
+ Symbol'; padding-top: 10px; padding-bottom: 10px; line-height: 1.5em; colo=
+r: #738a94; font-size: 13px;">
+                 <span style=3D"text-align: center; white-space: pre-wrap;"=
+>Photo by Jo Miyaguchi</span>
+                </div>
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+=F0=9F=93=8C <strong style=3D"font-weight: 700;">What=E2=80=99s happening:<=
+/strong> Masayoshi Son revealed Sam Altman asked him for $10 billion before=
+ 2019, and he said yes =E2=80=94 but Microsoft swooped in instead. Now <a h=
+ref=3D"https://aisecret.us/r/d6e6d6b7?m=3D0bb90972-7579-4264-9403-9a899de6f=
+e80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:underline #255bee;=
+color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-break=
+:break-word;" target=3D"_blank">Son's going "all in"</a> with $33.2 billion=
+ across various OpenAI deals, basically paying premium prices for what coul=
+d've been a founding father discount.</p><p style=3D"margin: 0 0 1.5em 0; l=
+ine-height: 1.6em;">=F0=9F=A7=A0 <strong style=3D"font-weight: 700;">How th=
+is hits reality:</strong> Son=E2=80=99s playing offense to <a href=3D"https=
+://aisecret.us/r/d215b25a?m=3D0bb90972-7579-4264-9403-9a899de6fe80" style=
+=3D"-webkit-text-decoration:underline #255bee;color:#255bee;font-weight:bol=
+d;text-decoration:underline #255bee;word-break:break-word;" target=3D"_blan=
+k">reclaim SoftBank=E2=80=99s cachet</a> post-WeWork fallout. Son believes =
+OpenAI "will become the most valuable company in the world" and wants SoftB=
+ank to be the ASI platform king. Meanwhile, Microsoft's exclusive cloud dea=
+l is toast and their restructuring approval is mysteriously stalled. Classi=
+c Silicon Valley <a href=3D"https://aisecret.us/r/f790ea38?m=3D0bb90972-757=
+9-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255be=
+e;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-bre=
+ak:break-word;" target=3D"_blank">musical chairs</a> at trillion-dollar sta=
+kes.</p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=F0=9F=9B=8E=
+=EF=B8=8F <strong style=3D"font-weight: 700;">Key takeaway:</strong> Masayo=
+shi Son revealed Sam Altman asked him for $10 billion before 2019, and he s=
+aid yes =E2=80=94 but Microsoft swooped in instead.</p>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;">TOGETHER WITH <mark>AISDR</mark></strong></p><h3 i=
+d=3D"book-more-stress-less" style=3D"margin-top: 0; font-family: -apple-sys=
+tem, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, =
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 1.11=
+em; font-weight: 700; text-rendering: optimizeLegibility; margin: 1.5em 0 0=
+.5em 0; font-size: 26px;">Book More, Stress Less</h3>
+               <div class=3D"kg-card kg-image-card" style=3D"margin: 0 0 1.=
+5em; padding: 0;">
+                <img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/06/A=
+iSDR-body-1.png" class=3D"kg-image" alt loading=3D"lazy" width=3D"600" heig=
+ht=3D"292" style=3D"border: none; -ms-interpolation-mode: bicubic; max-widt=
+h: 100%; display: block; margin: 0 auto; height: auto; width: auto;">
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+Instead of sending out generic emails that land in the dreaded =E2=80=9CI=
+=E2=80=99ll-get-to-it-later=E2=80=9D pile, AiSDR swoops in like a superhero=
+, armed with insights from 323+ data sources. With AiSDR, you=E2=80=99re no=
+t just casting a wide net; you=E2=80=99re using a finely-tuned fishing rod =
+to reel in the big ones.</p><p style=3D"margin: 0 0 1.5em 0; line-height: 1=
+.6em;"></p>
+               <div class=3D"btn btn-accent" style=3D"box-sizing: border-bo=
+x; width: 100%; display: table;">
+                <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"left" style=3D"border-collapse: separate; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; width: auto;" width=3D"auto">
+                 <tbody>
+                  <tr>
+                   <td align=3D"center" style=3D"font-family: -apple-system=
+, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Ap=
+ple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; ver=
+tical-align: top; color: #000000; border-radius: 5px; text-align: center; b=
+ackground-color: #27B4B4;" valign=3D"top" bgcolor=3D"#27B4B4"><a href=3D"ht=
+tps://aisecret.us/r/172a6359?m=3D0bb90972-7579-4264-9403-9a899de6fe80" styl=
+e=3D"overflow-wrap: anywhere; border: solid 1px #3498db; border-radius: 5px=
+; box-sizing: border-box; cursor: pointer; display: inline-block; font-size=
+: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: =
+none; background-color: #27B4B4; border-color: #27B4B4; color: #FFFFFF;" ta=
+rget=3D"_blank">Try now=F0=9F=91=89</a></td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+</p>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;"><mark>COPYRIGHT</mark></strong></p><h3 id=3D"altma=
+n-vs-nyt-privacy-is-the-new-pr-weapon" style=3D"margin-top: 0; font-family:=
+ -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, s=
+ans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-h=
+eight: 1.11em; font-weight: 700; text-rendering: optimizeLegibility; margin=
+: 1.5em 0 0.5em 0; font-size: 26px;"><strong style=3D"font-weight: 800;">Al=
+tman vs. NYT: Privacy Is the New PR Weapon</strong></h3>
+               <div class=3D"kg-card kg-image-card" style=3D"margin: 0 0 1.=
+5em; padding: 0;">
+                <img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/06/a=
+-photograph-depicting-a-split-screen-co_QlbylzZOTRKkf-hFnj6-0g__DsSuFBxT42W=
+2tIVe2b6kA.jpeg" class=3D"kg-image" alt loading=3D"lazy" width=3D"600" heig=
+ht=3D"337" style=3D"border: none; -ms-interpolation-mode: bicubic; max-widt=
+h: 100%; display: block; margin: 0 auto; height: auto; width: auto;">
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+=F0=9F=93=8C <strong style=3D"font-weight: 700;">What=E2=80=99s happening:<=
+/strong> At a live Hard Fork taping, Sam Altman <a href=3D"https://aisecret=
+.us/r/28a0a212?m=3D0bb90972-7579-4264-9403-9a899de6fe80" style=3D"-webkit-t=
+ext-decoration:underline #255bee;color:#255bee;font-weight:bold;text-decora=
+tion:underline #255bee;word-break:break-word;" target=3D"_blank">publicly d=
+ragged</a> The New York Times over its lawsuit, especially the part where t=
+hey want OpenAI to keep user chat logs=E2=80=94even in "private mode." Altm=
+an=E2=80=99s take? That=E2=80=99s not privacy; that=E2=80=99s surveillance =
+cosplay.</p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=F0=9F=A7=
+=A0 <strong style=3D"font-weight: 700;">How this hits reality:</strong> Thi=
+s isn=E2=80=99t just a courtroom beef. If <a href=3D"https://aisecret.us/r/=
+f806a983?m=3D0bb90972-7579-4264-9403-9a899de6fe80" style=3D"-webkit-text-de=
+coration:underline #255bee;color:#255bee;font-weight:bold;text-decoration:u=
+nderline #255bee;word-break:break-word;" target=3D"_blank">NYT gets its way=
+</a>, your AI =E2=80=9Cprivate mode=E2=80=9D isn=E2=80=99t really private. =
+That=E2=80=99s a UX and trust crisis waiting to happen=E2=80=94and a compli=
+ance nightmare for anyone shipping AI into regulated industries.</p><p styl=
+e=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=F0=9F=9B=8E=EF=B8=8F <stron=
+g style=3D"font-weight: 700;">Key takeaway:</strong> In 2025, privacy polic=
+ies are <a href=3D"https://aisecret.us/r/4aca60f9?m=3D0bb90972-7579-4264-94=
+03-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255bee;color:#=
+255bee;font-weight:bold;text-decoration:underline #255bee;word-break:break-=
+word;" target=3D"_blank">product features</a>=E2=80=94and Altman=E2=80=99s =
+betting you=E2=80=99ll pick the brand that actually hits delete.</p>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;"><mark>STARTUP</mark></strong></p><h3 id=3D"knowt-h=
+its-24m-visitors%E2%80%94apparently-solving-studying-is-a-growth-hack-now" =
+style=3D"margin-top: 0; font-family: -apple-system, BlinkMacSystemFont, 'Se=
+goe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe =
+UI Emoji', 'Segoe UI Symbol'; line-height: 1.11em; font-weight: 700; text-r=
+endering: optimizeLegibility; margin: 1.5em 0 0.5em 0; font-size: 26px;">Kn=
+owt Hits 2.4M Visitors=E2=80=94Apparently Solving Studying Is a Growth Hack=
+ Now</h3>
+               <div class=3D"kg-card kg-image-card" style=3D"margin: 0 0 1.=
+5em; padding: 0;">
+                <img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/06/2=
+21111111-2.png" class=3D"kg-image" alt loading=3D"lazy" width=3D"600" heigh=
+t=3D"337" style=3D"border: none; -ms-interpolation-mode: bicubic; max-width=
+: 100%; display: block; margin: 0 auto; height: auto; width: auto;">
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+=F0=9F=93=8C <strong style=3D"font-weight: 700;">What=E2=80=99s happening</=
+strong>: Knowt, the AI-powered study platform, just clocked 2.4 million new=
+ visitors in May 2025 according to <a href=3D"https://aisecret.us/r/73e9cea=
+8?m=3D0bb90972-7579-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoratio=
+n:underline #255bee;color:#255bee;font-weight:bold;text-decoration:underlin=
+e #255bee;word-break:break-word;" target=3D"_blank">AI Secret's growth repo=
+rt</a>. That=E2=80=99s not a typo=E2=80=94and no, they didn=E2=80=99t just =
+pay a TikTok influencer to say "quiz me daddy."</p><p style=3D"margin: 0 0 =
+1.5em 0; line-height: 1.6em;">=F0=9F=A7=A0 <strong style=3D"font-weight: 70=
+0;">How this hits reality</strong>: Knowt went from scrappy flashcard app t=
+o edtech juggernaut by solving what every VC pitch deck pretends to care ab=
+out: <a href=3D"https://aisecret.us/r/cd8ec1f1?m=3D0bb90972-7579-4264-9403-=
+9a899de6fe80" style=3D"-webkit-text-decoration:underline #255bee;color:#255=
+bee;font-weight:bold;text-decoration:underline #255bee;word-break:break-wor=
+d;" target=3D"_blank">actual student pain points</a>. Instead of =E2=80=9CA=
+I-enabled classroom disruption,=E2=80=9D they built something students actu=
+ally use=E2=80=94then let community and content loops do the scaling. Meanw=
+hile, textbook publishers are still debating mobile login UX.</p><p style=
+=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=F0=9F=9B=8E=EF=B8=8F <strong=
+ style=3D"font-weight: 700;">Key Takeaway</strong>: Turns out =E2=80=9C<a h=
+ref=3D"https://aisecret.us/r/f5c172ac?m=3D0bb90972-7579-4264-9403-9a899de6f=
+e80" style=3D"-webkit-text-decoration:underline #255bee;color:#255bee;font-=
+weight:bold;text-decoration:underline #255bee;word-break:break-word;" targe=
+t=3D"_blank">helping students not fail</a>=E2=80=9D beats =E2=80=9Creinvent=
+ing education=E2=80=9D as a business model.</p>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;"><mark>QUICK HITS</mark></strong></p>
+               <ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; paddin=
+g-left: 1.3em; padding-right: 1.5em; list-style: disc; max-width: 100%;">
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;"><a href=3D"https://aisecret.us/r/03e50ace?m=3D0bb90972-7579-42=
+64-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:u=
+nderline #255bee;color:#255bee;font-weight:bold;text-decoration:underline #=
+255bee;word-break:break-word;" target=3D"_blank">GitHub</a> Integrates Anth=
+ropic's Claude 4 Models into Copilot Platform.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">OpenAI Identifies <a href=3D"https://aisecret.us/r/dae62d62?m=
+=3D0bb90972-7579-4264-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webki=
+t-text-decoration:underline #255bee;color:#255bee;font-weight:bold;text-dec=
+oration:underline #255bee;word-break:break-word;" target=3D"_blank">Zhipu A=
+I</a> as China's Strategic AI Enforcer in Global Markets.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">Google introduces <a href=3D"https://aisecret.us/r/a877d5db?m=
+=3D0bb90972-7579-4264-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webki=
+t-text-decoration:underline #255bee;color:#255bee;font-weight:bold;text-dec=
+oration:underline #255bee;word-break:break-word;" target=3D"_blank">Doppl</=
+a>, an AI virtual fashion try-on app, <a href=3D"https://aisecret.us/r/a30b=
+26f9?m=3D0bb90972-7579-4264-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"=
+-webkit-text-decoration:underline #255bee;color:#255bee;font-weight:bold;te=
+xt-decoration:underline #255bee;word-break:break-word;" target=3D"_blank">A=
+I Ultra</a>, a Business Subscription Add-On, and <a href=3D"https://aisecre=
+t.us/r/423be86d?m=3D0bb90972-7579-4264-9403-9a899de6fe80" rel=3D"noreferrer=
+" style=3D"-webkit-text-decoration:underline #255bee;color:#255bee;font-wei=
+ght:bold;text-decoration:underline #255bee;word-break:break-word;" target=
+=3D"_blank">Offerwall</a>, a new monetization tool for publishers.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;"><a href=3D"https://aisecret.us/r/20066e1d?m=3D0bb90972-7579-42=
+64-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:u=
+nderline #255bee;color:#255bee;font-weight:bold;text-decoration:underline #=
+255bee;word-break:break-word;" target=3D"_blank">NIST AI Standards</a> Emer=
+ge as Blueprint for Federal Regulation Framework.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">AI Tool <a href=3D"https://aisecret.us/r/fc0ed743?m=3D0bb90972=
+-7579-4264-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-deco=
+ration:underline #255bee;color:#255bee;font-weight:bold;text-decoration:und=
+erline #255bee;word-break:break-word;" target=3D"_blank">Xbow</a> Becomes F=
+irst Autonomous System to Top HackerOne US Leaderboard.</li>
+               </ul>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;"><mark>TRENDING</mark></strong></p><h3 id=3D"daily-=
+ai-launches" style=3D"margin-top: 0; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 1.11em; font-weight=
+: 700; text-rendering: optimizeLegibility; margin: 1.5em 0 0.5em 0; font-si=
+ze: 26px;">Daily AI Launches</h3>
+               <ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; paddin=
+g-left: 1.3em; padding-right: 1.5em; list-style: disc; max-width: 100%;">
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;"><a href=3D"https://aisecret.us/r/0ae87101?m=3D0bb90972-7579-42=
+64-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:u=
+nderline #255bee;color:#255bee;font-weight:bold;text-decoration:underline #=
+255bee;word-break:break-word;" target=3D"_blank">Mysite.ai</a> has launched=
+ a 2-minute instant site builder that auto-creates pages, writes copy, and =
+sets up lead capture=E2=80=94no templates or signup required.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;"><a href=3D"https://aisecret.us/r/ee87e1d6?m=3D0bb90972-7579-42=
+64-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:u=
+nderline #255bee;color:#255bee;font-weight:bold;text-decoration:underline #=
+255bee;word-break:break-word;" target=3D"_blank">Clarify</a> has launched a=
+n autonomous CRM for founders that builds pipeline, closes deals, and elimi=
+nates manual data entry.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;"><a href=3D"https://aisecret.us/r/786f648f?m=3D0bb90972-7579-42=
+64-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:u=
+nderline #255bee;color:#255bee;font-weight:bold;text-decoration:underline #=
+255bee;word-break:break-word;" target=3D"_blank">Optibot</a> has launched a=
+n AI GitHub guardian that reviews PRs, fixes CI issues, and keeps codebases=
+ clean post-merge.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;"><a href=3D"https://aisecret.us/r/9f8e92e2?m=3D0bb90972-7579-42=
+64-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoration:u=
+nderline #255bee;color:#255bee;font-weight:bold;text-decoration:underline #=
+255bee;word-break:break-word;" target=3D"_blank">MoodGallery</a> has launch=
+ed an emotions-to-art diary that turns daily mood logs into a growing galle=
+ry of AI-generated artwork you can share with friends.</li>
+               </ul><h3 id=3D"featured-ai-tools" style=3D"margin-top: 0; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 1.11em; font-weight: 700; text-rendering: optimizeLegibili=
+ty; margin: 1.5em 0 0.5em 0; font-size: 26px;">Featured AI Tools</h3>
+               <ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; paddin=
+g-left: 1.3em; padding-right: 1.5em; list-style: disc; max-width: 100%;">
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">=F0=9F=AA=B6 <a href=3D"https://aisecret.us/r/c5b62efd?m=3D0bb=
+90972-7579-4264-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text=
+-decoration:underline #255bee;color:#255bee;font-weight:bold;text-decoratio=
+n:underline #255bee;word-break:break-word;" target=3D"_blank">CopyOwl</a> i=
+s the First AI Research Agent, deep research on any topic in one click.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">=F0=9F=93=9A <a href=3D"https://aisecret.us/r/e4526b22?m=3D0bb=
+90972-7579-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underli=
+ne #255bee;color:#255bee;font-weight:bold;text-decoration:underline #255bee=
+;word-break:break-word;" target=3D"_blank">Heardly</a> is the Fast Way to r=
+ead Best Book.</li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">=F0=9F=92=A1 <a href=3D"https://aisecret.us/r/50ad8b9a?m=3D0bb=
+90972-7579-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underli=
+ne #255bee;color:#255bee;font-weight:bold;text-decoration:underline #255bee=
+;word-break:break-word;" target=3D"_blank">Skywork Slides</a> offers AI-dri=
+ven presentation creation with structured designs for improved user experie=
+nce.</li>
+               </ul>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong sty=
+le=3D"font-weight: 700;">TOGETHER WITH&nbsp;<mark>US</mark></strong></p><p =
+style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong style=3D"font-we=
+ight: 700;">AI Secret Media Group </strong>is the world=E2=80=99s <strong s=
+tyle=3D"font-weight: 700;">#1 AI &amp; Tech Newsletter Group</strong>, boas=
+ting over <strong style=3D"font-weight: 700;">1 million readers</strong> fr=
+om leading companies such as OpenAI, Google, Meta, and Microsoft. <strong s=
+tyle=3D"font-weight: 700;">Our Newsletter Brands:</strong></p>
+               <ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; paddin=
+g-left: 1.3em; padding-right: 1.5em; list-style: disc; max-width: 100%;">
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">AI: <a href=3D"https://aisecret.us/r/5a74109a?m=3D0bb90972-757=
+9-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255be=
+e;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-bre=
+ak:break-word;" target=3D"_blank">AI Secret</a></li>
+                <li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-hei=
+ght: 1.6em;">Tech: <a href=3D"https://aisecret.us/r/72f277d0?m=3D0bb90972-7=
+579-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255=
+bee;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-b=
+reak:break-word;" target=3D"_blank">Bay Area Letters</a></li>
+               </ul><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">W=
+e've helped promote <strong style=3D"font-weight: 700;">over 500 Tech Brand=
+s</strong>. Will yours be the next?</p><p style=3D"margin: 0 0 1.5em 0; lin=
+e-height: 1.6em;"></p>
+               <div class=3D"btn btn-accent" style=3D"box-sizing: border-bo=
+x; width: 100%; display: table;">
+                <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"left" style=3D"border-collapse: separate; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; width: auto;" width=3D"auto">
+                 <tbody>
+                  <tr>
+                   <td align=3D"center" style=3D"font-family: -apple-system=
+, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Ap=
+ple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; ver=
+tical-align: top; color: #000000; border-radius: 5px; text-align: center; b=
+ackground-color: #27B4B4;" valign=3D"top" bgcolor=3D"#27B4B4"><a href=3D"ht=
+tps://aisecret.us/r/43118a8f?m=3D0bb90972-7579-4264-9403-9a899de6fe80" styl=
+e=3D"overflow-wrap: anywhere; border: solid 1px #3498db; border-radius: 5px=
+; box-sizing: border-box; cursor: pointer; display: inline-block; font-size=
+: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: =
+none; background-color: #27B4B4; border-color: #27B4B4; color: #FFFFFF;" ta=
+rget=3D"_blank">Reach out=F0=9F=91=89</a></td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">=
+</p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;">Email our co-foun=
+der Mark directly at <a href=3D"https://aisecret.us/r/53ddf6f8?m=3D0bb90972=
+-7579-4264-9403-9a899de6fe80" rel=3D"noopener noreferrer nofollow" style=3D=
+"-webkit-text-decoration:underline #255bee;color:#255bee;font-weight:bold;t=
+ext-decoration:underline #255bee;word-break:break-word;" target=3D"_blank">=
+mark@aisecret.us</a> if the button fails.</p>
+               <hr style=3D"position: relative; display: block; width: 100%=
+; margin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid =
+#e5eff5;">
+               <blockquote class=3D"kg-blockquote-alt" style=3D"margin: 2em=
+ 0 2em 0; font-weight: 500; line-height: 1.6em; letter-spacing: -0.2px; bor=
+der-left: 0 none; padding: 0 50px 0 50px; text-align: center; font-size: 1.=
+2em; font-style: italic; color: #738a94;">
+                <a href=3D"https://aisecret.us/r/fbe93655?m=3D0bb90972-7579=
+-4264-9403-9a899de6fe80" rel=3D"noreferrer" style=3D"-webkit-text-decoratio=
+n:underline #255bee;color:#255bee;font-weight:bold;text-decoration:underlin=
+e #255bee;word-break:break-word;" target=3D"_blank"><strong style=3D"font-w=
+eight: 700;">Latest Daily Rundowns</strong></a>
+               </blockquote>
+               <div><!--[if !mso !vml]-->
+                <div class=3D"kg-card kg-bookmark-card " style=3D"margin: 0=
+ 0 1.5em; padding: 0; width: 100%; background: #ffffff;"><a class=3D"kg-boo=
+kmark-container" href=3D"https://aisecret.us/r/27a5db72?m=3D0bb90972-7579-4=
+264-9403-9a899de6fe80" style=3D"display: flex; min-height: 148px; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, =
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border-radius: 3px; b=
+order: 1px solid #e5eff5; overflow-wrap: anywhere; color: #255bee; text-dec=
+oration: none;" target=3D"_blank">
+                  <div class=3D"kg-bookmark-content" style=3D"display: inli=
+ne-block; width: 100%; padding: 20px;">
+                   <div class=3D"kg-bookmark-title" style=3D"color: #000000=
+; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                    =F0=9F=9B=8E=EF=B8=8F Google Boom
+                   </div>
+                   <div class=3D"kg-bookmark-description" style=3D"display:=
+ -webkit-box; overflow-y: hidden; margin-top: 12px; max-height: 40px; color=
+: #738a94; font-size: 13px; line-height: 1.5em; font-weight: 400; -webkit-l=
+ine-clamp: 2; -webkit-box-orient: vertical;">
+                    A Code Rocket, Claude Factory, Scale AI Crisis
+                   </div>
+                   <div class=3D"kg-bookmark-metadata" style=3D"display: fl=
+ex; flex-wrap: wrap; align-items: center; margin-top: 14px; color: #000000;=
+ font-size: 13px; font-weight: 400;"><img class=3D"kg-bookmark-icon" src=3D=
+"https://d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" alt style=3D"bor=
+der: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: =
+8px; width: 22px; height: 22px;" width=3D"22" height=3D"22"> <span class=3D=
+"kg-bookmark-author" src=3D"AI Secret" style=3D"line-height: 1.5em;">AI Sec=
+ret</span> <span class=3D"kg-bookmark-publisher" src=3D"Magna" style=3D"ove=
+rflow: hidden; max-width: 240px; line-height: 1.5em; text-overflow: ellipsi=
+s; white-space: nowrap;"><span style=3D"margin: 0 6px;">=E2=80=A2</span>Mag=
+na</span>
+                   </div>
+                  </div>
+                  <div class=3D"kg-bookmark-thumbnail" style=3D"min-width: =
+140px; max-width: 180px; background-repeat: no-repeat; background-size: cov=
+er; background-position: center; border-radius: 0 2px 2px 0; background-ima=
+ge: url('https://d18e5vrcqydw4b.cloudfront.net/2025/06/a-digital-cover-art-=
+featuring-a-stark-bl_BwvMgqxsQKWW-eHW10-MhQ_eI5dnVNyTv-9lAmlejW1BA-3.jpeg')=
+;"><img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/06/a-digital-cove=
+r-art-featuring-a-stark-bl_BwvMgqxsQKWW-eHW10-MhQ_eI5dnVNyTv-9lAmlejW1BA-3.=
+jpeg" alt style=3D"border: none; -ms-interpolation-mode: bicubic; max-width=
+: 100%; display: none;">
+                  </div> </a>
+                </div> <!--[endif]--> <!--[if vml]>
+            <table class=3D"kg-card kg-bookmark-card--outlook" style=3D"mar=
+gin: 0; padding: 0; width: 100%; border: 1px solid #e5eff5; background: #ff=
+ffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O=
+xygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border=
+-collapse: collapse; border-spacing: 0;" width=3D"100%">
+                <tr>
+                    <td width=3D"100%" style=3D"padding: 20px;">
+                        <table style=3D"margin: 0; padding: 0; border-colla=
+pse: collapse; border-spacing: 0;">
+                            <tr>
+                                <td class=3D"kg-bookmark-title--outlook">
+                                    <a href=3D"https://aisecret.us/google-b=
+oom/" style=3D"text-decoration: none; color: #000000; font-size: 15px; line=
+-height: 1.5em; font-weight: 600;">
+                                        =F0=9F=9B=8E=EF=B8=8F Google Boom
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=3D"kg-bookmark-description--=
+outlook">
+                                        <a href=3D"https://aisecret.us/goog=
+le-boom/" style=3D"text-decoration: none; margin-top: 12px; color: #738a94;=
+ font-size: 13px; line-height: 1.5em; font-weight: 400;">
+                                            A Code Rocket, Claude Factory, =
+Scale AI Crisis
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"kg-bookmark-metadata--outlook"=
+ style=3D"padding-top: 14px; color: #000000; font-size: 13px; font-weight: =
+400; line-height: 1.5em;">
+                                    <table style=3D"margin: 0; padding: 0; =
+border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                           =20
+                                                <td valign=3D"middle" class=
+=3D"kg-bookmark-icon--outlook" style=3D"padding-right: 8px; font-size: 0; l=
+ine-height: 1.5em;">
+                                                    <a href=3D"https://aise=
+cret.us/google-boom/" style=3D"text-decoration: none; color: #000000;">
+                                                        <img src=3D"https:/=
+/d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" width=3D"22" height=3D"2=
+2" alt=3D" ">
+                                                    </a>
+                                                </td>
+                                           =20
+                                            <td valign=3D"middle" class=3D"=
+kg-bookmark-byline--outlook">
+                                                <a href=3D"https://aisecret=
+.us/google-boom/" style=3D"text-decoration: none; color: #000000;">
+                                                    AI Secret
+                                                    &nbsp;&#x2022;&nbsp;
+                                                    Magna
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class=3D"kg-bookmark-spacer--outlook" style=3D"height: 1.5=
+em;">&nbsp;</div>
+        <![endif]-->
+               </div>
+               <div><!--[if !mso !vml]-->
+                <div class=3D"kg-card kg-bookmark-card " style=3D"margin: 0=
+ 0 1.5em; padding: 0; width: 100%; background: #ffffff;"><a class=3D"kg-boo=
+kmark-container" href=3D"https://aisecret.us/r/8605b276?m=3D0bb90972-7579-4=
+264-9403-9a899de6fe80" style=3D"display: flex; min-height: 148px; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, =
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border-radius: 3px; b=
+order: 1px solid #e5eff5; overflow-wrap: anywhere; color: #255bee; text-dec=
+oration: none;" target=3D"_blank">
+                  <div class=3D"kg-bookmark-content" style=3D"display: inli=
+ne-block; width: 100%; padding: 20px;">
+                   <div class=3D"kg-bookmark-title" style=3D"color: #000000=
+; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                    =F0=9F=9B=8E=EF=B8=8F Clipboard Conqueror
+                   </div>
+                   <div class=3D"kg-bookmark-description" style=3D"display:=
+ -webkit-box; overflow-y: hidden; margin-top: 12px; max-height: 40px; color=
+: #738a94; font-size: 13px; line-height: 1.5em; font-weight: 400; -webkit-l=
+ine-clamp: 2; -webkit-box-orient: vertical;">
+                    An AI startup is redefining the industry
+                   </div>
+                   <div class=3D"kg-bookmark-metadata" style=3D"display: fl=
+ex; flex-wrap: wrap; align-items: center; margin-top: 14px; color: #000000;=
+ font-size: 13px; font-weight: 400;"><img class=3D"kg-bookmark-icon" src=3D=
+"https://d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" alt style=3D"bor=
+der: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: =
+8px; width: 22px; height: 22px;" width=3D"22" height=3D"22"> <span class=3D=
+"kg-bookmark-author" src=3D"AI Secret" style=3D"line-height: 1.5em;">AI Sec=
+ret</span> <span class=3D"kg-bookmark-publisher" src=3D"Magna" style=3D"ove=
+rflow: hidden; max-width: 240px; line-height: 1.5em; text-overflow: ellipsi=
+s; white-space: nowrap;"><span style=3D"margin: 0 6px;">=E2=80=A2</span>Mag=
+na</span>
+                   </div>
+                  </div>
+                  <div class=3D"kg-bookmark-thumbnail" style=3D"min-width: =
+140px; max-width: 180px; background-repeat: no-repeat; background-size: cov=
+er; background-position: center; border-radius: 0 2px 2px 0; background-ima=
+ge: url('https://d18e5vrcqydw4b.cloudfront.net/2025/06/a-digital-cover-art-=
+featuring-a-stark-bl_BwvMgqxsQKWW-eHW10-MhQ_eI5dnVNyTv-9lAmlejW1BA-3.jpeg')=
+;"><img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/06/a-digital-cove=
+r-art-featuring-a-stark-bl_BwvMgqxsQKWW-eHW10-MhQ_eI5dnVNyTv-9lAmlejW1BA-3.=
+jpeg" alt style=3D"border: none; -ms-interpolation-mode: bicubic; max-width=
+: 100%; display: none;">
+                  </div> </a>
+                </div> <!--[endif]--> <!--[if vml]>
+            <table class=3D"kg-card kg-bookmark-card--outlook" style=3D"mar=
+gin: 0; padding: 0; width: 100%; border: 1px solid #e5eff5; background: #ff=
+ffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O=
+xygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border=
+-collapse: collapse; border-spacing: 0;" width=3D"100%">
+                <tr>
+                    <td width=3D"100%" style=3D"padding: 20px;">
+                        <table style=3D"margin: 0; padding: 0; border-colla=
+pse: collapse; border-spacing: 0;">
+                            <tr>
+                                <td class=3D"kg-bookmark-title--outlook">
+                                    <a href=3D"https://aisecret.us/clipboar=
+d-conqueror/" style=3D"text-decoration: none; color: #000000; font-size: 15=
+px; line-height: 1.5em; font-weight: 600;">
+                                        =F0=9F=9B=8E=EF=B8=8F Clipboard Con=
+queror
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=3D"kg-bookmark-description--=
+outlook">
+                                        <a href=3D"https://aisecret.us/clip=
+board-conqueror/" style=3D"text-decoration: none; margin-top: 12px; color: =
+#738a94; font-size: 13px; line-height: 1.5em; font-weight: 400;">
+                                            An AI startup is redefining the=
+ industry
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"kg-bookmark-metadata--outlook"=
+ style=3D"padding-top: 14px; color: #000000; font-size: 13px; font-weight: =
+400; line-height: 1.5em;">
+                                    <table style=3D"margin: 0; padding: 0; =
+border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                           =20
+                                                <td valign=3D"middle" class=
+=3D"kg-bookmark-icon--outlook" style=3D"padding-right: 8px; font-size: 0; l=
+ine-height: 1.5em;">
+                                                    <a href=3D"https://aise=
+cret.us/clipboard-conqueror/" style=3D"text-decoration: none; color: #00000=
+0;">
+                                                        <img src=3D"https:/=
+/d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" width=3D"22" height=3D"2=
+2" alt=3D" ">
+                                                    </a>
+                                                </td>
+                                           =20
+                                            <td valign=3D"middle" class=3D"=
+kg-bookmark-byline--outlook">
+                                                <a href=3D"https://aisecret=
+.us/clipboard-conqueror/" style=3D"text-decoration: none; color: #000000;">
+                                                    AI Secret
+                                                    &nbsp;&#x2022;&nbsp;
+                                                    Magna
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class=3D"kg-bookmark-spacer--outlook" style=3D"height: 1.5=
+em;">&nbsp;</div>
+        <![endif]-->
+               </div>
+               <div><!--[if !mso !vml]-->
+                <div class=3D"kg-card kg-bookmark-card " style=3D"margin: 0=
+ 0 1.5em; padding: 0; width: 100%; background: #ffffff;"><a class=3D"kg-boo=
+kmark-container" href=3D"https://aisecret.us/r/164e000c?m=3D0bb90972-7579-4=
+264-9403-9a899de6fe80" style=3D"display: flex; min-height: 148px; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, =
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border-radius: 3px; b=
+order: 1px solid #e5eff5; overflow-wrap: anywhere; color: #255bee; text-dec=
+oration: none;" target=3D"_blank">
+                  <div class=3D"kg-bookmark-content" style=3D"display: inli=
+ne-block; width: 100%; padding: 20px;">
+                   <div class=3D"kg-bookmark-title" style=3D"color: #000000=
+; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                    =F0=9F=9B=8E=EF=B8=8F AI Browsing War
+                   </div>
+                   <div class=3D"kg-bookmark-description" style=3D"display:=
+ -webkit-box; overflow-y: hidden; margin-top: 12px; max-height: 40px; color=
+: #738a94; font-size: 13px; line-height: 1.5em; font-weight: 400; -webkit-l=
+ine-clamp: 2; -webkit-box-orient: vertical;">
+                    An AI Reached 2.2M Visitors in Weeks
+                   </div>
+                   <div class=3D"kg-bookmark-metadata" style=3D"display: fl=
+ex; flex-wrap: wrap; align-items: center; margin-top: 14px; color: #000000;=
+ font-size: 13px; font-weight: 400;"><img class=3D"kg-bookmark-icon" src=3D=
+"https://d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" alt style=3D"bor=
+der: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: =
+8px; width: 22px; height: 22px;" width=3D"22" height=3D"22"> <span class=3D=
+"kg-bookmark-author" src=3D"AI Secret" style=3D"line-height: 1.5em;">AI Sec=
+ret</span> <span class=3D"kg-bookmark-publisher" src=3D"Magna" style=3D"ove=
+rflow: hidden; max-width: 240px; line-height: 1.5em; text-overflow: ellipsi=
+s; white-space: nowrap;"><span style=3D"margin: 0 6px;">=E2=80=A2</span>Mag=
+na</span>
+                   </div>
+                  </div>
+                  <div class=3D"kg-bookmark-thumbnail" style=3D"min-width: =
+140px; max-width: 180px; background-repeat: no-repeat; background-size: cov=
+er; background-position: center; border-radius: 0 2px 2px 0; background-ima=
+ge: url('https://d18e5vrcqydw4b.cloudfront.net/2025/06/a-digital-cover-art-=
+featuring-a-stark-bl_BwvMgqxsQKWW-eHW10-MhQ_eI5dnVNyTv-9lAmlejW1BA-3.jpeg')=
+;"><img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/06/a-digital-cove=
+r-art-featuring-a-stark-bl_BwvMgqxsQKWW-eHW10-MhQ_eI5dnVNyTv-9lAmlejW1BA-3.=
+jpeg" alt style=3D"border: none; -ms-interpolation-mode: bicubic; max-width=
+: 100%; display: none;">
+                  </div> </a>
+                </div> <!--[endif]--> <!--[if vml]>
+            <table class=3D"kg-card kg-bookmark-card--outlook" style=3D"mar=
+gin: 0; padding: 0; width: 100%; border: 1px solid #e5eff5; background: #ff=
+ffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O=
+xygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border=
+-collapse: collapse; border-spacing: 0;" width=3D"100%">
+                <tr>
+                    <td width=3D"100%" style=3D"padding: 20px;">
+                        <table style=3D"margin: 0; padding: 0; border-colla=
+pse: collapse; border-spacing: 0;">
+                            <tr>
+                                <td class=3D"kg-bookmark-title--outlook">
+                                    <a href=3D"https://aisecret.us/ai-brows=
+ing-war/" style=3D"text-decoration: none; color: #000000; font-size: 15px; =
+line-height: 1.5em; font-weight: 600;">
+                                        =F0=9F=9B=8E=EF=B8=8F AI Browsing W=
+ar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=3D"kg-bookmark-description--=
+outlook">
+                                        <a href=3D"https://aisecret.us/ai-b=
+rowsing-war/" style=3D"text-decoration: none; margin-top: 12px; color: #738=
+a94; font-size: 13px; line-height: 1.5em; font-weight: 400;">
+                                            An AI Reached 2.2M Visitors in =
+Weeks
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"kg-bookmark-metadata--outlook"=
+ style=3D"padding-top: 14px; color: #000000; font-size: 13px; font-weight: =
+400; line-height: 1.5em;">
+                                    <table style=3D"margin: 0; padding: 0; =
+border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                           =20
+                                                <td valign=3D"middle" class=
+=3D"kg-bookmark-icon--outlook" style=3D"padding-right: 8px; font-size: 0; l=
+ine-height: 1.5em;">
+                                                    <a href=3D"https://aise=
+cret.us/ai-browsing-war/" style=3D"text-decoration: none; color: #000000;">
+                                                        <img src=3D"https:/=
+/d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" width=3D"22" height=3D"2=
+2" alt=3D" ">
+                                                    </a>
+                                                </td>
+                                           =20
+                                            <td valign=3D"middle" class=3D"=
+kg-bookmark-byline--outlook">
+                                                <a href=3D"https://aisecret=
+.us/ai-browsing-war/" style=3D"text-decoration: none; color: #000000;">
+                                                    AI Secret
+                                                    &nbsp;&#x2022;&nbsp;
+                                                    Magna
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class=3D"kg-bookmark-spacer--outlook" style=3D"height: 1.5=
+em;">&nbsp;</div>
+        <![endif]-->
+               </div>
+               <blockquote class=3D"kg-blockquote-alt" style=3D"margin: 2em=
+ 0 2em 0; font-weight: 500; line-height: 1.6em; letter-spacing: -0.2px; bor=
+der-left: 0 none; padding: 0 50px 0 50px; text-align: center; font-size: 1.=
+2em; font-style: italic; color: #738a94;">
+                <a href=3D"https://aisecret.us/r/cf0f39f7?m=3D0bb90972-7579=
+-4264-9403-9a899de6fe80" style=3D"-webkit-text-decoration:underline #255bee=
+;color:#255bee;font-weight:bold;text-decoration:underline #255bee;word-brea=
+k:break-word;" target=3D"_blank"><strong style=3D"font-weight: 700;">More A=
+I Stories</strong></a>
+               </blockquote>
+               <div><!--[if !mso !vml]-->
+                <div class=3D"kg-card kg-bookmark-card " style=3D"margin: 0=
+ 0 1.5em; padding: 0; width: 100%; background: #ffffff;"><a class=3D"kg-boo=
+kmark-container" href=3D"https://aisecret.us/r/06af6177?m=3D0bb90972-7579-4=
+264-9403-9a899de6fe80" style=3D"display: flex; min-height: 148px; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, =
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border-radius: 3px; b=
+order: 1px solid #e5eff5; overflow-wrap: anywhere; color: #255bee; text-dec=
+oration: none;" target=3D"_blank">
+                  <div class=3D"kg-bookmark-content" style=3D"display: inli=
+ne-block; width: 100%; padding: 20px;">
+                   <div class=3D"kg-bookmark-title" style=3D"color: #000000=
+; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                    The Legal Battle Between Indian Media and OpenAI
+                   </div>
+                   <div class=3D"kg-bookmark-description" style=3D"display:=
+ -webkit-box; overflow-y: hidden; margin-top: 12px; max-height: 40px; color=
+: #738a94; font-size: 13px; line-height: 1.5em; font-weight: 400; -webkit-l=
+ine-clamp: 2; -webkit-box-orient: vertical;">
+                    In a landmark legal battle that could redefine the inte=
+rsection of artificial intelligence (AI) and copyright law in India, a coal=
+ition of Indian news outlets and book publishers has filed a lawsuit agains=
+t OpenAI in the Delhi High Court. The case accuses OpenAI, the developer of=
+ the widely used ChatGPT
+                   </div>
+                   <div class=3D"kg-bookmark-metadata" style=3D"display: fl=
+ex; flex-wrap: wrap; align-items: center; margin-top: 14px; color: #000000;=
+ font-size: 13px; font-weight: 400;"><img class=3D"kg-bookmark-icon" src=3D=
+"https://d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" alt style=3D"bor=
+der: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: =
+8px; width: 22px; height: 22px;" width=3D"22" height=3D"22"> <span class=3D=
+"kg-bookmark-author" src=3D"AI Secret" style=3D"line-height: 1.5em;">AI Sec=
+ret</span> <span class=3D"kg-bookmark-publisher" src=3D"Magna" style=3D"ove=
+rflow: hidden; max-width: 240px; line-height: 1.5em; text-overflow: ellipsi=
+s; white-space: nowrap;"><span style=3D"margin: 0 6px;">=E2=80=A2</span>Mag=
+na</span>
+                   </div>
+                  </div>
+                  <div class=3D"kg-bookmark-thumbnail" style=3D"min-width: =
+140px; max-width: 180px; background-repeat: no-repeat; background-size: cov=
+er; background-position: center; border-radius: 0 2px 2px 0; background-ima=
+ge: url('https://d18e5vrcqydw4b.cloudfront.net/2025/05/a-photograph-depicti=
+ng-a-courtroom-scene_Knx3J7FPTmurSi39yxDpQQ_qiCN-3qHRTOqwHuCb6zmtQ.jpeg');"=
+><img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/05/a-photograph-dep=
+icting-a-courtroom-scene_Knx3J7FPTmurSi39yxDpQQ_qiCN-3qHRTOqwHuCb6zmtQ.jpeg=
+" alt style=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 10=
+0%; display: none;">
+                  </div> </a>
+                </div> <!--[endif]--> <!--[if vml]>
+            <table class=3D"kg-card kg-bookmark-card--outlook" style=3D"mar=
+gin: 0; padding: 0; width: 100%; border: 1px solid #e5eff5; background: #ff=
+ffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O=
+xygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border=
+-collapse: collapse; border-spacing: 0;" width=3D"100%">
+                <tr>
+                    <td width=3D"100%" style=3D"padding: 20px;">
+                        <table style=3D"margin: 0; padding: 0; border-colla=
+pse: collapse; border-spacing: 0;">
+                            <tr>
+                                <td class=3D"kg-bookmark-title--outlook">
+                                    <a href=3D"https://aisecret.us/the-lega=
+l-battle-between-indian-media-and-openai/" style=3D"text-decoration: none; =
+color: #000000; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                                        The Legal Battle Between Indian Med=
+ia and OpenAI
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=3D"kg-bookmark-description--=
+outlook">
+                                        <a href=3D"https://aisecret.us/the-=
+legal-battle-between-indian-media-and-openai/" style=3D"text-decoration: no=
+ne; margin-top: 12px; color: #738a94; font-size: 13px; line-height: 1.5em; =
+font-weight: 400;">
+                                            In a landmark legal battle that=
+ could redefine the intersection of artificial intelligence (AI) and copyri=
+ght law in India, a coalition of Indian news outlets and book publishers ha=
+s filed a lawsuit against OpenAI in the Delhi High Court. The case accuses =
+OpenAI, the developer of the widely used ChatGPT
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"kg-bookmark-metadata--outlook"=
+ style=3D"padding-top: 14px; color: #000000; font-size: 13px; font-weight: =
+400; line-height: 1.5em;">
+                                    <table style=3D"margin: 0; padding: 0; =
+border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                           =20
+                                                <td valign=3D"middle" class=
+=3D"kg-bookmark-icon--outlook" style=3D"padding-right: 8px; font-size: 0; l=
+ine-height: 1.5em;">
+                                                    <a href=3D"https://aise=
+cret.us/the-legal-battle-between-indian-media-and-openai/" style=3D"text-de=
+coration: none; color: #000000;">
+                                                        <img src=3D"https:/=
+/d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" width=3D"22" height=3D"2=
+2" alt=3D" ">
+                                                    </a>
+                                                </td>
+                                           =20
+                                            <td valign=3D"middle" class=3D"=
+kg-bookmark-byline--outlook">
+                                                <a href=3D"https://aisecret=
+.us/the-legal-battle-between-indian-media-and-openai/" style=3D"text-decora=
+tion: none; color: #000000;">
+                                                    AI Secret
+                                                    &nbsp;&#x2022;&nbsp;
+                                                    Magna
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class=3D"kg-bookmark-spacer--outlook" style=3D"height: 1.5=
+em;">&nbsp;</div>
+        <![endif]-->
+               </div>
+               <div><!--[if !mso !vml]-->
+                <div class=3D"kg-card kg-bookmark-card " style=3D"margin: 0=
+ 0 1.5em; padding: 0; width: 100%; background: #ffffff;"><a class=3D"kg-boo=
+kmark-container" href=3D"https://aisecret.us/r/dd50395f?m=3D0bb90972-7579-4=
+264-9403-9a899de6fe80" style=3D"display: flex; min-height: 148px; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, =
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border-radius: 3px; b=
+order: 1px solid #e5eff5; overflow-wrap: anywhere; color: #255bee; text-dec=
+oration: none;" target=3D"_blank">
+                  <div class=3D"kg-bookmark-content" style=3D"display: inli=
+ne-block; width: 100%; padding: 20px;">
+                   <div class=3D"kg-bookmark-title" style=3D"color: #000000=
+; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                    Microsoft Strikes Deals With OpenAI=E2=80=99s Top Rival=
+s for AI Coding Assistant
+                   </div>
+                   <div class=3D"kg-bookmark-description" style=3D"display:=
+ -webkit-box; overflow-y: hidden; margin-top: 12px; max-height: 40px; color=
+: #738a94; font-size: 13px; line-height: 1.5em; font-weight: 400; -webkit-l=
+ine-clamp: 2; -webkit-box-orient: vertical;">
+                    In a move that could be likened to a tech industry soap=
+ opera, Microsoft has taken a bold step by striking deals with OpenAI=E2=80=
+=99s top rivals to enhance its AI coding assistant, GitHub Copilot. This de=
+velopment marks a significant shift in the dynamics of the AI landscape, as=
+ Microsoft seeks
+                   </div>
+                   <div class=3D"kg-bookmark-metadata" style=3D"display: fl=
+ex; flex-wrap: wrap; align-items: center; margin-top: 14px; color: #000000;=
+ font-size: 13px; font-weight: 400;"><img class=3D"kg-bookmark-icon" src=3D=
+"https://d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" alt style=3D"bor=
+der: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: =
+8px; width: 22px; height: 22px;" width=3D"22" height=3D"22"> <span class=3D=
+"kg-bookmark-author" src=3D"AI Secret" style=3D"line-height: 1.5em;">AI Sec=
+ret</span> <span class=3D"kg-bookmark-publisher" src=3D"Magna" style=3D"ove=
+rflow: hidden; max-width: 240px; line-height: 1.5em; text-overflow: ellipsi=
+s; white-space: nowrap;"><span style=3D"margin: 0 6px;">=E2=80=A2</span>Mag=
+na</span>
+                   </div>
+                  </div>
+                  <div class=3D"kg-bookmark-thumbnail" style=3D"min-width: =
+140px; max-width: 180px; background-repeat: no-repeat; background-size: cov=
+er; background-position: center; border-radius: 0 2px 2px 0; background-ima=
+ge: url('https://aisecret.us/content/images/2024/10/a-photo-of-microsoft-ce=
+o-satya-nadella-standing-in-wXOrKXd8Rh6SryPcxKVLhw-QT6nNK4VSCmdFRnNJfzdVA.p=
+ng');"><img src=3D"https://aisecret.us/content/images/2024/10/a-photo-of-mi=
+crosoft-ceo-satya-nadella-standing-in-wXOrKXd8Rh6SryPcxKVLhw-QT6nNK4VSCmdFR=
+nNJfzdVA.png" alt style=3D"border: none; -ms-interpolation-mode: bicubic; m=
+ax-width: 100%; display: none;">
+                  </div> </a>
+                </div> <!--[endif]--> <!--[if vml]>
+            <table class=3D"kg-card kg-bookmark-card--outlook" style=3D"mar=
+gin: 0; padding: 0; width: 100%; border: 1px solid #e5eff5; background: #ff=
+ffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O=
+xygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border=
+-collapse: collapse; border-spacing: 0;" width=3D"100%">
+                <tr>
+                    <td width=3D"100%" style=3D"padding: 20px;">
+                        <table style=3D"margin: 0; padding: 0; border-colla=
+pse: collapse; border-spacing: 0;">
+                            <tr>
+                                <td class=3D"kg-bookmark-title--outlook">
+                                    <a href=3D"https://aisecret.us/microsof=
+t-strikes-deals-with-openais-top-rivals-for-ai-coding-assistant/" style=3D"=
+text-decoration: none; color: #000000; font-size: 15px; line-height: 1.5em;=
+ font-weight: 600;">
+                                        Microsoft Strikes Deals With OpenAI=
+=E2=80=99s Top Rivals for AI Coding Assistant
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=3D"kg-bookmark-description--=
+outlook">
+                                        <a href=3D"https://aisecret.us/micr=
+osoft-strikes-deals-with-openais-top-rivals-for-ai-coding-assistant/" style=
+=3D"text-decoration: none; margin-top: 12px; color: #738a94; font-size: 13p=
+x; line-height: 1.5em; font-weight: 400;">
+                                            In a move that could be likened=
+ to a tech industry soap opera, Microsoft has taken a bold step by striking=
+ deals with OpenAI=E2=80=99s top rivals to enhance its AI coding assistant,=
+ GitHub Copilot. This development marks a significant shift in the dynamics=
+ of the AI landscape, as Microsoft seeks
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"kg-bookmark-metadata--outlook"=
+ style=3D"padding-top: 14px; color: #000000; font-size: 13px; font-weight: =
+400; line-height: 1.5em;">
+                                    <table style=3D"margin: 0; padding: 0; =
+border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                           =20
+                                                <td valign=3D"middle" class=
+=3D"kg-bookmark-icon--outlook" style=3D"padding-right: 8px; font-size: 0; l=
+ine-height: 1.5em;">
+                                                    <a href=3D"https://aise=
+cret.us/microsoft-strikes-deals-with-openais-top-rivals-for-ai-coding-assis=
+tant/" style=3D"text-decoration: none; color: #000000;">
+                                                        <img src=3D"https:/=
+/d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" width=3D"22" height=3D"2=
+2" alt=3D" ">
+                                                    </a>
+                                                </td>
+                                           =20
+                                            <td valign=3D"middle" class=3D"=
+kg-bookmark-byline--outlook">
+                                                <a href=3D"https://aisecret=
+.us/microsoft-strikes-deals-with-openais-top-rivals-for-ai-coding-assistant=
+/" style=3D"text-decoration: none; color: #000000;">
+                                                    AI Secret
+                                                    &nbsp;&#x2022;&nbsp;
+                                                    Magna
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class=3D"kg-bookmark-spacer--outlook" style=3D"height: 1.5=
+em;">&nbsp;</div>
+        <![endif]-->
+               </div>
+               <div><!--[if !mso !vml]-->
+                <div class=3D"kg-card kg-bookmark-card " style=3D"margin: 0=
+ 0 1.5em; padding: 0; width: 100%; background: #ffffff;"><a class=3D"kg-boo=
+kmark-container" href=3D"https://aisecret.us/r/655fda82?m=3D0bb90972-7579-4=
+264-9403-9a899de6fe80" style=3D"display: flex; min-height: 148px; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, =
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border-radius: 3px; b=
+order: 1px solid #e5eff5; overflow-wrap: anywhere; color: #255bee; text-dec=
+oration: none;" target=3D"_blank">
+                  <div class=3D"kg-bookmark-content" style=3D"display: inli=
+ne-block; width: 100%; padding: 20px;">
+                   <div class=3D"kg-bookmark-title" style=3D"color: #000000=
+; font-size: 15px; line-height: 1.5em; font-weight: 600;">
+                    OpenAI Plans to Cut Microsoft Revenue Share After Restr=
+ucturing
+                   </div>
+                   <div class=3D"kg-bookmark-description" style=3D"display:=
+ -webkit-box; overflow-y: hidden; margin-top: 12px; max-height: 40px; color=
+: #738a94; font-size: 13px; line-height: 1.5em; font-weight: 400; -webkit-l=
+ine-clamp: 2; -webkit-box-orient: vertical;">
+                    Over the years, OpenAI has established a significant pa=
+rtnership with Microsoft, which has been a major investor and collaborator.=
+ However, recent developments indicate that OpenAI plans to reduce its reve=
+nue share to Microsoft as part of its broader restructuring efforts. This m=
+ove is expected to have far-reaching implications for both
+                   </div>
+                   <div class=3D"kg-bookmark-metadata" style=3D"display: fl=
+ex; flex-wrap: wrap; align-items: center; margin-top: 14px; color: #000000;=
+ font-size: 13px; font-weight: 400;"><img class=3D"kg-bookmark-icon" src=3D=
+"https://d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" alt style=3D"bor=
+der: none; -ms-interpolation-mode: bicubic; max-width: 100%; margin-right: =
+8px; width: 22px; height: 22px;" width=3D"22" height=3D"22"> <span class=3D=
+"kg-bookmark-author" src=3D"AI Secret" style=3D"line-height: 1.5em;">AI Sec=
+ret</span> <span class=3D"kg-bookmark-publisher" src=3D"Magna" style=3D"ove=
+rflow: hidden; max-width: 240px; line-height: 1.5em; text-overflow: ellipsi=
+s; white-space: nowrap;"><span style=3D"margin: 0 6px;">=E2=80=A2</span>Mag=
+na</span>
+                   </div>
+                  </div>
+                  <div class=3D"kg-bookmark-thumbnail" style=3D"min-width: =
+140px; max-width: 180px; background-repeat: no-repeat; background-size: cov=
+er; background-position: center; border-radius: 0 2px 2px 0; background-ima=
+ge: url('https://d18e5vrcqydw4b.cloudfront.net/2025/05/a-photograph-depicti=
+ng-a-sleek-modern-of_wlOppXXHRf-R3ajZ4rmCMg_HfjC5-77SsqMMuLv1F6Khg.jpeg');"=
+><img src=3D"https://d18e5vrcqydw4b.cloudfront.net/2025/05/a-photograph-dep=
+icting-a-sleek-modern-of_wlOppXXHRf-R3ajZ4rmCMg_HfjC5-77SsqMMuLv1F6Khg.jpeg=
+" alt style=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 10=
+0%; display: none;">
+                  </div> </a>
+                </div> <!--[endif]--> <!--[if vml]>
+            <table class=3D"kg-card kg-bookmark-card--outlook" style=3D"mar=
+gin: 0; padding: 0; width: 100%; border: 1px solid #e5eff5; background: #ff=
+ffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O=
+xygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border=
+-collapse: collapse; border-spacing: 0;" width=3D"100%">
+                <tr>
+                    <td width=3D"100%" style=3D"padding: 20px;">
+                        <table style=3D"margin: 0; padding: 0; border-colla=
+pse: collapse; border-spacing: 0;">
+                            <tr>
+                                <td class=3D"kg-bookmark-title--outlook">
+                                    <a href=3D"https://aisecret.us/openai-p=
+lans-to-cut-microsoft-revenue-share-after-restructuring/" style=3D"text-dec=
+oration: none; color: #000000; font-size: 15px; line-height: 1.5em; font-we=
+ight: 600;">
+                                        OpenAI Plans to Cut Microsoft Reven=
+ue Share After Restructuring
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=3D"kg-bookmark-description--=
+outlook">
+                                        <a href=3D"https://aisecret.us/open=
+ai-plans-to-cut-microsoft-revenue-share-after-restructuring/" style=3D"text=
+-decoration: none; margin-top: 12px; color: #738a94; font-size: 13px; line-=
+height: 1.5em; font-weight: 400;">
+                                            Over the years, OpenAI has esta=
+blished a significant partnership with Microsoft, which has been a major in=
+vestor and collaborator. However, recent developments indicate that OpenAI =
+plans to reduce its revenue share to Microsoft as part of its broader restr=
+ucturing efforts. This move is expected to have far-reaching implications f=
+or both
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"kg-bookmark-metadata--outlook"=
+ style=3D"padding-top: 14px; color: #000000; font-size: 13px; font-weight: =
+400; line-height: 1.5em;">
+                                    <table style=3D"margin: 0; padding: 0; =
+border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                           =20
+                                                <td valign=3D"middle" class=
+=3D"kg-bookmark-icon--outlook" style=3D"padding-right: 8px; font-size: 0; l=
+ine-height: 1.5em;">
+                                                    <a href=3D"https://aise=
+cret.us/openai-plans-to-cut-microsoft-revenue-share-after-restructuring/" s=
+tyle=3D"text-decoration: none; color: #000000;">
+                                                        <img src=3D"https:/=
+/d18e5vrcqydw4b.cloudfront.net/2024/12/logo-1.png" width=3D"22" height=3D"2=
+2" alt=3D" ">
+                                                    </a>
+                                                </td>
+                                           =20
+                                            <td valign=3D"middle" class=3D"=
+kg-bookmark-byline--outlook">
+                                                <a href=3D"https://aisecret=
+.us/openai-plans-to-cut-microsoft-revenue-share-after-restructuring/" style=
+=3D"text-decoration: none; color: #000000;">
+                                                    AI Secret
+                                                    &nbsp;&#x2022;&nbsp;
+                                                    Magna
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class=3D"kg-bookmark-spacer--outlook" style=3D"height: 1.5=
+em;">&nbsp;</div>
+        <![endif]-->
+               </div> <!-- POST CONTENT END --></td>
+             </tr>
+            </tbody>
+           </table></td>
+         </tr> <!-- END MAIN CONTENT AREA -->
+         <tr>
+          <td dir=3D"ltr" width=3D"100%" style=3D"font-family: -apple-syste=
+m, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'A=
+pple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; ve=
+rtical-align: top; color: #000000; background-color: #ffffff; text-align: c=
+enter; padding: 32px 0 24px; border-bottom: 1px solid #e5eff5;" align=3D"ce=
+nter" bgcolor=3D"#ffffff" valign=3D"top">
+           <table class=3D"feedback-buttons" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: separa=
+te; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: auto; width: auto=
+;" width=3D"auto">
+            <tbody>
+             <tr>
+              <td dir=3D"ltr" valign=3D"top" align=3D"center" style=3D"colo=
+r: #000000; display: inline-block; vertical-align: top; font-family: inheri=
+t; font-size: 14px; text-align: center; padding: 0 4px 4px; cursor: pointer=
+;" nowrap><a href=3D"https://aisecret.us/bubble-trouble/#/feedback/685c112c=
+1e6d8bc6787d797e/1/?uuid=3D0bb90972-7579-4264-9403-9a899de6fe80" target=3D"=
+_blank" style=3D"color: #255bee; text-decoration: none; overflow-wrap: anyw=
+here;"> <img src=3D"https://static.ghost.org/v5.0.0/images/more-like-this.p=
+ng" border=3D"0" width=3D"145" height=3D"36" alt=3D"More like this" style=
+=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 100%;"> </a><=
+/td>
+              <td dir=3D"ltr" valign=3D"top" align=3D"center" style=3D"colo=
+r: #000000; display: inline-block; vertical-align: top; font-family: inheri=
+t; font-size: 14px; text-align: center; padding: 0 4px 4px; cursor: pointer=
+;" nowrap><a href=3D"https://aisecret.us/bubble-trouble/#/feedback/685c112c=
+1e6d8bc6787d797e/0/?uuid=3D0bb90972-7579-4264-9403-9a899de6fe80" target=3D"=
+_blank" style=3D"color: #255bee; text-decoration: none; overflow-wrap: anyw=
+here;"> <img src=3D"https://static.ghost.org/v5.0.0/images/less-like-this.p=
+ng" border=3D"0" width=3D"142" height=3D"36" alt=3D"Less like this" style=
+=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 100%;"> </a><=
+/td>
+             </tr>
+            </tbody>
+           </table>
+           <table class=3D"feedback-buttons-mobile" role=3D"presentation" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: s=
+eparate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; display=
+: none; mso-hide: all;" width=3D"100%">
+            <tbody>
+             <tr>
+              <td dir=3D"ltr" valign=3D"top" align=3D"center" style=3D"colo=
+r: #000000; vertical-align: top; font-family: inherit; font-size: 14px; tex=
+t-align: center; padding: 0 4px 4px; cursor: pointer; width: 33%;" nowrap w=
+idth=3D"33%"><a href=3D"https://aisecret.us/bubble-trouble/#/feedback/685c1=
+12c1e6d8bc6787d797e/1/?uuid=3D0bb90972-7579-4264-9403-9a899de6fe80" target=
+=3D"_blank" style=3D"color: #255bee; text-decoration: none; overflow-wrap: =
+anywhere;"> <img src=3D"https://static.ghost.org/v5.0.0/images/more-like-th=
+is-mobile.png" border=3D"0" width=3D"42" height=3D"42" alt=3D"More like thi=
+s" style=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 100%;=
+"> <p class=3D"feedback-button-mobile-text" style=3D"margin: 0 0 1.5em 0; l=
+ine-height: 1.6em; color: #000000; font-weight: 500; margin-bottom: 0; font=
+-size: 13px;">More like this</p> </a></td>
+              <td dir=3D"ltr" valign=3D"top" align=3D"center" style=3D"colo=
+r: #000000; vertical-align: top; font-family: inherit; font-size: 14px; tex=
+t-align: center; padding: 0 4px 4px; cursor: pointer; width: 33%;" nowrap w=
+idth=3D"33%"><a href=3D"https://aisecret.us/bubble-trouble/#/feedback/685c1=
+12c1e6d8bc6787d797e/0/?uuid=3D0bb90972-7579-4264-9403-9a899de6fe80" target=
+=3D"_blank" style=3D"color: #255bee; text-decoration: none; overflow-wrap: =
+anywhere;"> <img src=3D"https://static.ghost.org/v5.0.0/images/less-like-th=
+is-mobile.png" border=3D"0" width=3D"42" height=3D"42" alt=3D"Less like thi=
+s" style=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 100%;=
+"> <p class=3D"feedback-button-mobile-text" style=3D"margin: 0 0 1.5em 0; l=
+ine-height: 1.6em; color: #000000; font-weight: 500; margin-bottom: 0; font=
+-size: 13px;">Less like this</p> </a></td>
+             </tr>
+            </tbody>
+           </table></td>
+         </tr>
+         <tr>
+          <td class=3D"wrapper" align=3D"center" style=3D"font-family: -app=
+le-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-s=
+erif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: =
+18px; vertical-align: top; color: #000000; box-sizing: border-box;" valign=
+=3D"top">
+           <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"border-collapse: separate; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; width: 100%; padding-top: 40px; padding=
+-bottom: 30px;">
+            <tbody>
+             <tr>
+              <td class=3D"footer" style=3D"font-family: -apple-system, Bli=
+nkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple C=
+olor Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top; colo=
+r: #738a94; margin-top: 20px; text-align: center; padding-bottom: 10px; pad=
+ding-top: 10px; padding-left: 30px; padding-right: 30px; line-height: 1.5em=
+; font-size: 13px;" valign=3D"top" align=3D"center"><p dir=3D"ltr" style=3D=
+"margin: 0 0 1.5em 0; line-height: 1.6em;"><span>AI Secret is the World=E2=
+=80=99s Top 1 AI Newsletter with 1.5 Million+ Members. Learn how to leverag=
+e AI in your business and career before everyone else. It's Free to subscri=
+be.</span><br><br><span>16192 Coastal Highway</span><br><span>Lewes, Delawa=
+re 19958, United States.</span></p></td>
+             </tr>
+             <tr>
+              <td class=3D"footer" style=3D"font-family: -apple-system, Bli=
+nkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple C=
+olor Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top; colo=
+r: #738a94; margin-top: 20px; text-align: center; padding-bottom: 10px; pad=
+ding-top: 10px; padding-left: 30px; padding-right: 30px; line-height: 1.5em=
+; font-size: 13px;" valign=3D"top" align=3D"center">AI Secret =C2=A9 2025 =
+=E2=80=93 <a href=3D"https://aisecret.us/unsubscribe/?uuid=3D0bb90972-7579-=
+4264-9403-9a899de6fe80&newsletter=3D3ce353fa-0781-406f-968b-f712405ba520" s=
+tyle=3D"overflow-wrap: anywhere; color: #738a94; text-decoration: none; fon=
+t-size: 13px;" target=3D"_blank">Unsubscribe</a></td>
+             </tr>
+            </tbody>
+           </table></td>
+         </tr>
+        </tbody>
+       </table> <!-- END CENTERED WHITE CONTAINER -->
+      </div></td>
+     <td style=3D"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI=
+', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emo=
+ji', 'Segoe UI Symbol'; font-size: 18px; vertical-align: top; color: #00000=
+0;" valign=3D"top">&nbsp;</td>
+    </tr> <!--[if mso]>
+                            </table>
+                        </center>
+                    </td>
+                </tr>
+            <![endif]-->
+   </tbody>
+  </table>
+ </body>
+ <head></head>
+ <body>
+  <img src=3D"https://gw.askgpt.plus/v3/ghost/pixel?source=3Daisecret&amp;u=
+uid=3D0bb90972-7579-4264-9403-9a899de6fe80&amp;id=3D685e6bb51e6d8bc67884c4d=
+2" border=3D"0" width=3D"1" height=3D"1">
+ </body>
+</html>
+------=_Part_7538683_571724271.1751018701803--
+
+
+
